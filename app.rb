@@ -21,7 +21,8 @@ include PayPal::SDK::REST
         :amount => {
           :total => "100",
           :currency => "JPY" },
-      :description => "A new cardboard box for Maru" }]
+        :description => "A new cardboard box for Maru"
+      }]
     })
 
     if payment.create
