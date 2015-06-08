@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Braintree Dropin Payments Example</title>
+
+  <link rel='stylesheet' href='/components/bootstrap/dist/css/bootstrap.min.css'>
+</head>
+<body>
+  <div class='container'>
+    <div class='row'>
+      <header>
+        <h1>Payment Success</h1>
+      </header>
+    </div>
+
+    <div class='row'>
+      <h2>Params</h2>
+      <%= @params.ai(html: true, indent: 2, plain: true) %>
+    </div>
+
+    <div class='row'>
+      <h2>Braintree::Transaction</h2>
+      <%= @transaction.ai(html: true, indent: 2, plain: true) %>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A PayPal REST API Example in Ruby</title>
+    <link rel='stylesheet' href='/components/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/components/bootstrap/dist/css/custom.css'>
+  </head>
+  <body>
+    <div class='container'>
+
+      <div class="col-md-offset-1 col-md-5 col-xs-12 col-sm-6">
+        <img src='/img/happy.gif' class='img-responsive center'>
+      </div>
+
+      <div class='col-md-5 col-xs-12 col-sm-6'>
+
+        <div class="row">
+          <h1 class='center'>Maru is Happy</h1>
+          <h4 class='center'>transaction complete</h4>
+        </div>
+
+        <div class='row'>
+          <h4>output variables</h4>
+          <%= params.ai(html: true, indent: 2, plain: true) %>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

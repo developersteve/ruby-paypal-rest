@@ -1,0 +1,8 @@
+development: &default
+  mode: sandbox
+  client_id: AWTHXhmf2qRzffZTEwUCBGyPH7PvB-AKBgPxcV7hDTRY8z0Gafkm7uK3Bg45bIC_zavxUCFg28ypTAhZ
+  client_secret: EKmgM2vFQZ0c_4KVpYBoD7jN6HO9vubxhTS1JUjpdTTv3vaSLty5cCv45qzdhr7Kj8VCQzuRAHWv1eOq
+test:
+  <<: *default
+production:
+  <<: *default

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A PayPal REST API Example in Ruby</title>
+    <link rel='stylesheet' href='/components/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/components/bootstrap/dist/css/custom.css'>
+  </head>
+  <body>
+    <div class='container'>
+
+      <div class="col-md-offset-1 col-md-5 col-xs-12 col-sm-6">
+        <img src='/img/paymeh.jpg' class='img-responsive center'>
+      </div>
+
+      <div class='col-md-5 col-xs-12 col-sm-6'>
+
+        <div class="row">
+          <h1 class='center'>Maru's Store</h1>
+        </div>
+
+        <div class="row">
+          <div id='checkout'>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1"><h5>QTY</h5></div>
+          <div class="col-md-6"><h5>DESCRIPTION</h5></div>
+          <div class="col-md-2"><h5>PRICE</h5></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1">1</div>
+          <div class="col-md-6">New Cardboard Box</div>
+          <div class="col-md-2">¥100.00</div>
+        </div>
+        <div class="row rowspace">
+          <div class="input-group col-md-6 pull-right">
+            <a href="<%= @redirect %>"><img src='/img/paypal.gif' class='img-responsive center'></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
