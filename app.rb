@@ -43,7 +43,7 @@ include PayPal::SDK::REST
 
   get "/completed" do
 
-  payment = Payment.find(session[:payment_id])
+    payment = Payment.find(session[:payment_id])
 
     if payment.execute(payer_id: params["PayerID"])
       erb :complete
